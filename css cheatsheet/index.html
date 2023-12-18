@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS Cheat Sheet</h1>
+        <p>(Cascading Style Sheet)</p>
+    </header>
+
+    <section class="section">
+        <h2>Font Properties</h2>
+        <div class="code-sample">
+            <!-- Font-Family -->
+            <p>Define font family</p>
+            <code>P { font-family: "New Century Schoolbook", Times, serif; }</code>
+
+            <!-- Font-Style -->
+            <p>Change text style</p>
+            <code>H1 { font-style: oblique; }</code>
+            <code>P { font-style: normal; }</code>
+
+            <!-- Font-Variant -->
+            <p>Display font in normal or small-caps</p>
+            <code>SPAN { font-variant: small-caps; }</code>
+
+            <!-- Font-Weight -->
+            <p>Specify font weight</p>
+            <code>H1 { font-weight: 800; }</code>
+            <code>P { font-weight: normal; }</code>
+
+            <!-- Font-Size -->
+            <p>Modify font size</p>
+            <code>H1 { font-size: large; }</code>
+            <code>P { font-size: 12pt; }</code>
+            <code>LI { font-size: 90%; }</code>
+            <code>STRONG { font-size: larger; }</code>
+
+            <!-- Font -->
+            <p>Combine all font properties</p>
+            <code>P { font: italic bold 12pt/14pt Times, serif; }</code>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Color and Background Properties</h2>
+        <div class="code-sample">
+            <!-- Color -->
+            <p>Change text color</p>
+            <code>H1 { color: blue; }</code>
+            <code>H2 { color: #000080; }</code>
+
+            <!-- Background-Color -->
+            <p>Set background color</p>
+            <code>BODY { background-color: white; }</code>
+            <code>H1 { background-color: #000080; }</code>
+
+            <!-- Background-Image -->
+            <p>Set background image</p>
+            <code>BODY { background-image: url(/images/foo.gif); }</code>
+            <code>P { background-image: url(http://www.htmlhelp.com/bg.png); }</code>
+
+            <!-- Background-Repeat -->
+            <p>Determine background image repetition</p>
+            <code>BODY { background: white url(candybar.gif); background-repeat: repeat-x; }</code>
+
+            <!-- Background-Attachment -->
+            <p>Determine if background image scrolls with content</p>
+            <code>BODY { background: white url(candybar.gif); background-attachment: fixed; }</code>
+
+            <!-- Background -->
+            <p>Combine all background properties</p>
+            <code>BODY { background: white url(http://www.htmlhelp.com/foo.gif); }</code>
+            <code>BLOCKQUOTE { background: #7fffd4; }</code>
+            <code>P { background: url(../backgrounds/pawn.png) #f0f8ff fixed; }</code>
+            <code>TABLE { background: red url(leaves.jpg) no-repeat bottom right; }</code>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Text Properties</h2>
+        <div class="code-sample">
+            <!-- Word-Spacing -->
+            <p>Defines space between words</p>
+            <code>P EM { word-spacing: 0.4em; }</code>
+            <code>P.note { word-spacing: -0.2em; }</code>
+
+            <!-- Letter-Spacing -->
+            <p>Defines space between characters</p>
+            <code>H1 { letter-spacing: 0.1em; }</code>
+            <code>P.note { letter-spacing: -0.1em; }</code>
+
+            <!-- Text-Decoration -->
+            <p>Decorate text</p>
+            <code>A:link, A:visited, A:active { text-decoration: none; }</code>
+
+            <!-- Vertical-Align -->
+            <p>Vertical positioning of inline elements</p>
+            <code>IMG.middle { vertical-align: middle; }</code>
+            <code>IMG { vertical-align: 50%; }</code>
+            <code>.exponent { vertical-align: super; }</code>
+
+            <!-- Text-Transform -->
+            <p>Transform text</p>
+            <code>H1 { text-transform: uppercase; }</code>
+            <code>H2 { text-transform: capitalize; }</code>
+
+            <!-- Text-Align -->
+            <p>Align text</p>
+            <code>H1 { text-align: center; }</code>
+            <code>P.newspaper { text-align: justify; }</code>
+
+            <!-- Text-Indent -->
+            <p>Indentation of the first line</p>
+            <code>P { text-indent: 5em; }</code>
+
+            <!-- Line-Height -->
+            <p>Control spacing between baselines</p>
+            <code>P { line-height: 200%; }</code>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Classification Properties</h2>
+        <div class="code-sample">
+            <!-- List-Style-Type -->
+            <p>Specify list-item marker type</p>
+            <code>LI.square { list-style-type: square; }</code>
+            <code>UL.plain { list-style-type: none; }</code>
+            <code>OL { list-style-type: upper-alpha; }</code>
+            <code>OL OL { list-style-type: decimal; }</code>
+            <code>OL OL OL { list-style-type: lower-roman; }</code>
+
+            <!-- List-Style-Image -->
+            <p>Specify list-item marker image</p>
+            <code>UL.check { list-style-image: url(/LI-markers/checkmark.gif); }</code>
+            <code>UL LI.x { list-style-image: url(x.png); }</code>
+
+            <!-- List-Style-Position -->
+            <p>Specify list-item marker position</p>
+            <code>UL { list-style-position: inside; }</code>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>For more details, refer to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs</a>.
+        </p>
+
+    </footer>
+    <h4>References</h4>
+    <p>Cascading style sheets cheatsheet &amp;66 - Stanford University. (n.d.). </p>
+    <cite><a
+            href="https://web.stanford.edu/group/csp/cs21/csscheatsheet.pdf">https://web.stanford.edu/group/csp/cs21/csscheatsheet.pdf</a></cite>
+
+</body>
+
+</html>
